@@ -32,6 +32,7 @@ header {
     align-items: center;
     padding: 10px 20px;
     color: var(--primary-ivory);
+    height: 12vh;
   }
   
   .logo {
@@ -77,7 +78,19 @@ header {
   #togle{
     opacity: 0;
   }
-  
+  .slider-container{
+    height: 88vh;
+    width: 100vw;
+  }
+
+  .hero-img{
+    width: 40%;
+  }
+  .hero-img img{
+    height: 100%;
+    width: 100%;
+  }
+
 @media (max-width: 768px) {
     .nav-links {
       display: none; /* Can be replaced with a hamburger menu for mobile */
