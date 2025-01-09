@@ -20,10 +20,15 @@ html, body{
     height: 100%;
     width: 100%;
     background-color: var(--primary-ivory);
+    z-index: 9;
+}
+a{
+  text-decoration: none;
 }
 header {
     background-color: var(--primary-terracotta);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
   }
   
   .navbar {
@@ -60,8 +65,8 @@ header {
     transition: color 0.3s ease;
   }
   
-  .nav-links a:hover {
-    color: var(--secondary-gray);
+  .nav-links:hover > :not(:hover) {
+    opacity: 0.5;
   }
   
   .nav-icons a {
@@ -78,7 +83,32 @@ header {
   #togle{
     opacity: 0;
   }
-  .slider-container{
+  .nav-togle{
+    position: absolute;
+    top: 12vh;
+    right: 0;
+    height: 300px;
+    width: 250px;
+    background-color: var(--primary-terracotta);
+    z-index: 10;
+    padding: 20px 0 ;
+    display: none;
+    box-shadow: 0 0 10px var();
+  }
+  .nav-togle-links li{
+    list-style: none;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 20px;
+  }
+  .nav-togle-links:hover >:not(:hover){
+    opacity: .4;
+  }
+  .nav-togle-links li a{
+    list-style: none;
+    color: var(--primary-ivory);
+  }
+  .hero-container{
     height: 88vh;
     width: 100vw;
   }
