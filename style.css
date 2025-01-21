@@ -174,7 +174,6 @@ nav h3 {
 
 #hero-2 {
   background: linear-gradient(var#723e2f, #723d2fc4);
-
   height: 30vw;
   width: 30vw;
   border-radius: 50%;
@@ -313,8 +312,6 @@ nav h3 {
   border-radius: 50%;
   background: linear-gradient(to top right, var(--clay-color), var(--accent-color));
   /* background: linear-gradient(to top right,red,blue); */
-
-
   top: 58%;
   left: 25%;
   filter: blur(20px);
@@ -467,7 +464,28 @@ nav h3 {
   background-color: #EFEAE3;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-
+  /* background-color: aqua; */
+  position: relative;
+}
+#full-div1 #togle-nav{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  /* background-color: bisque; */
+  z-index: 1000;
+}
+#full-div1 #togle-nav h4 a{
+  text-decoration: none;
+  color: var(--clay-color);
+}
+#full-div1 #togle-nav h4{
+  text-align: center;
+  font-size: 4vh;
+  margin-bottom:2vh ;
+}
+#full-div1 #togle-nav h4:hover{
+  border-bottom: 1px solid var(--accent-color);
 }
 
 @media (max-width:600px) {
