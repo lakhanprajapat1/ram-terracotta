@@ -1,28 +1,28 @@
 @font-face {
   font-family: neu;
-  src: url(./NeueHaasDisplayMediu.ttf);
+  src: url(./Fonts/NeueHaasDisplayMediu.ttf);
 }
 
 @font-face {
   font-family: neu;
   font-weight: 100;
-  src: url(./NeueHaasDisplayLight.ttf);
+  src: url(./Fonts/NeueHaasDisplayLight.ttf);
 }
 
 @font-face {
   font-family: neu;
   font-weight: 200;
-  src: url(./NeueHaasDisplayRoman.ttf);
+  src: url(./Fonts/NeueHaasDisplayRoman.ttf);
 }
 
 :root {
-  --clay-color: #e27d60;      
+  --clay-color: #723e2f;      
   --earth-tone: #c3a48b;      
   --natural-green: #7a8d4f;   
   --dark-brown: #4e4b3e;       
   --light-cream: #f1f0e6;      
   --text-color: #3a3a3a;       
-  --accent-color: #9c6e4f;     
+  --accent-color: #865a3c;     
 }
 
 * {
@@ -136,6 +136,7 @@ nav h3 {
   width: 25vw;
   font-size: 1.8vw;
   line-height: 2vw;
+  color: var(--accent-color);
 }
 
 #center h1 {
@@ -143,7 +144,9 @@ nav h3 {
   text-align: right;
   line-height: 8vw;
 }
-
+#center #right h1 span{
+  color: var(--clay-color);
+}
 #page1 video {
   position: relative;
   border-radius: 30px;
@@ -160,7 +163,7 @@ nav h3 {
 }
 
 #hero-1 {
-  background-color: #FE320A;
+  background-color: #723d2fb2;
   height: 100%;
   width: 100%;
   border-top-left-radius: 50%;
@@ -170,7 +173,7 @@ nav h3 {
 }
 
 #hero-2 {
-  background: linear-gradient(#FE320A, #fe3f0a);
+  background: linear-gradient(var#723e2f, #723d2fc4);
 
   height: 30vw;
   width: 30vw;
@@ -185,7 +188,7 @@ nav h3 {
 }
 
 #hero-3 {
-  background: linear-gradient(#FE320A, #fe3f0a);
+  background: linear-gradient(var(--clay-color), var(--accent-color));
   height: 30vw;
   position: absolute;
   width: 30vw;
@@ -255,7 +258,7 @@ nav h3 {
   width: 70px;
   border-radius: 50%;
   display: inline-block;
-  background-color: #FE320A;
+  background-color:var(--clay-color);
   margin: 1vw 2vw;
 }
 
@@ -308,7 +311,7 @@ nav h3 {
   width: 32vw;
   position: absolute;
   border-radius: 50%;
-  background: linear-gradient(to top right, #ff2d03, #ff5c0b);
+  background: linear-gradient(to top right, var(--clay-color), var(--accent-color));
   /* background: linear-gradient(to top right,red,blue); */
 
 
@@ -366,7 +369,7 @@ nav h3 {
 .elem .overlay {
   height: 100%;
   width: 100%;
-  background-color: orange;
+  background-color: var(--accent-color);
   position: absolute;
   left: 0;
   top: -100%;
@@ -439,7 +442,7 @@ nav h3 {
 #footer-div {
   height: 20vh;
   width: 100%;
-  background-color: red;
+  background-color: var(--earth-tone);
 }
 
 #footer-bottom {
@@ -575,7 +578,7 @@ nav h3 {
       width: 25px;
       border-radius: 50%;
       display: inline-block;
-      background-color: #FE320A;
+      background-color: var(--clay-color);
       margin: 2vw 2vw;
   }
 
@@ -619,7 +622,7 @@ nav h3 {
       width: 62vw;
       position: absolute;
       border-radius: 50%;
-      background: linear-gradient(to top right, #ff2d03, #ff5c0b);
+      background: linear-gradient(to top right, var(--clay-color), var(--accent-color));
       /* background: linear-gradient(to top right,red,blue); */
 
 
@@ -653,7 +656,7 @@ nav h3 {
 #loader h1{
   font-size: 4vw;
   color: transparent;
-  background: linear-gradient(to right,orange,orangered);
+  background: linear-gradient(to right,rgb(254, 181, 44),orangered);
   -webkit-background-clip: text;
   position: absolute;
   opacity: 0;
@@ -687,6 +690,5 @@ nav h3 {
 @media (max-width:600px) {
   #loader h1{
       font-size: 9vw;
-    
   }
 }
