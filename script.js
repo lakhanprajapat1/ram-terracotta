@@ -60,3 +60,12 @@ swiperAnimation()
 page4Animation()
 menuAnimation()
 loaderAnimation()
+
+const swiper = new Swiper('.mySwiper', {
+    loop: true, // Enable infinite looping
+    autoplay: {
+      delay: 3000, // Slide duration in milliseconds
+      disableOnInteraction: false, // Continue autoplay after user interaction
+    },
+    speed: 1000, // Transition speed in milliseconds
+  });
