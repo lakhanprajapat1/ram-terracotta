@@ -61,11 +61,12 @@ page4Animation()
 menuAnimation()
 loaderAnimation()
 
+// part4 ka slider using swiper.js
 const swiper = new Swiper('.mySwiper', {
-    loop: true, // Enable infinite looping
+    loop: true, 
     autoplay: {
-      delay: 3000, // Slide duration in milliseconds
-      disableOnInteraction: false, // Continue autoplay after user interaction
+      delay: 3000, 
+      disableOnInteraction: false, 
     },
-    speed: 1000, // Transition speed in milliseconds
+    speed: 800, 
   });
