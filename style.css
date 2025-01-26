@@ -394,7 +394,7 @@ nav h3 {
   width: 100%;
   background-color: #EFEAE3;
   padding: 5vw 2vw;
-  background-color: #7a8d4f;
+  /* background-color: #7a8d4f; */
 }
 
 .swiper {
@@ -404,11 +404,44 @@ nav h3 {
 
 .swiper-slide {
   width: 100%;
-  border: 1px solid #aeadad;
+  /* border: 1px solid #aeadad; */
   padding: 0 2vw;
   display: flex;
   height: 100%;
-  background-color: #723e2f;
+  background-color: var(--accent-color);
+  border-radius: 10px;
+  color: var(--light-cream);
+}
+.swiper-left{
+  height: 100%;
+  width: 60%;
+  padding: 5% 5%;
+  font-weight: 200;
+  letter-spacing: 2px;
+  line-height: 25px;
+  font-size: 20px;
+}
+.swiper-left h1{
+  padding-bottom: 5%;
+}
+.swiper-left button{
+  font-size: 20px;
+  padding: 7px 15px;
+  border: 1px solid var(--light-cream);
+  border-radius: 10px;
+  margin-top: 5%;
+}
+.swiper-left button:hover{
+  background-color: var(--accent-color);
+  color: var(--light-cream);
+}
+.swiper-right{
+  height: 100%;
+  width: 40%;
+  padding: 5% 0;
+}
+.swiper-right img{
+  height: 100%;
 }
 
 #page5 {
