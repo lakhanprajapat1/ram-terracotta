@@ -61,12 +61,12 @@ page4Animation()
 menuAnimation()
 loaderAnimation()
 
-// // part4 ka slider using swiper.js
-// const swiper = new Swiper('.mySwiper', {
-//     loop: true, 
-//     autoplay: {
-//       delay: 3000, 
-//       disableOnInteraction: false, 
-//     },
-//     speed: 800, 
-//   });
+// part4 ka slider using swiper.js
+const swiper = new Swiper('.mySwiper', {
+    loop: true, 
+    autoplay: {
+      delay: 3000, 
+      disableOnInteraction: false, 
+    },
+    speed: 800, 
+  });

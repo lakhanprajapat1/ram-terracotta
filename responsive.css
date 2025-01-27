@@ -6,7 +6,10 @@
       height: 100%;
       width: 100%;
     }
-    
+    .swiper-slide{
+        align-items: center;
+        justify-content: center;
+    }
   }
   @media (max-width:600px) {
   
